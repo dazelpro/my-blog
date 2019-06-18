@@ -64,6 +64,7 @@
  * By default development will show errors but testing and live will hide them.
  */
 switch (ENVIRONMENT)
+
 {
 	case 'development':
 		error_reporting(-1);
