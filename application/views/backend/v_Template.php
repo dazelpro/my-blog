@@ -100,7 +100,7 @@
 									<li><a href="<?php echo site_url('backend/category');?>" class="">Category</a></li>
 									<li><a href="<?php echo site_url('backend/tag');?>" class="">Tag</a></li>
 								</ul>
-							</div>
+							</div> 
 						</li>
 						<li>
 							<a href="#subPages2" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i> <span>Article</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
