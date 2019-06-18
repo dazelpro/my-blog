@@ -114,6 +114,15 @@
 						<li><a href="#" class=""><i class="lnr lnr-inbox"></i> <span>Inbox</span></a></li>
 						<li><a href="#" class=""><i class="lnr lnr-bubble"></i> <span>Comment</span></a></li>
 						<li><a href="#" class=""><i class="lnr lnr-users"></i> <span>Subscriber</span></a></li>
+						<li>
+							<a href="#subPages3" data-toggle="collapse" class="collapsed"><i class="lnr lnr-cog"></i> <span>Setting</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages3" class="collapse ">
+								<ul class="nav">
+									<li><a href="<?php echo site_url('backend/article');?>" class="">Website</a></li>
+									<li><a href="<?php echo site_url('backend/article/listing');?>" class="">Information</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</nav>
 			</div>
