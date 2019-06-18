@@ -15,7 +15,7 @@ class Tag extends CI_Controller {
 	{
 		$d['data'] = $this->db->query("select* from t_tag");  
 		$x['isi'] = $this->load->view('backend/v_tag',$d,true);
-		$this->load->view('backend/dashboard',$x);
+		$this->load->view('backend/v_template',$x);
 	}
 
 	public function save()

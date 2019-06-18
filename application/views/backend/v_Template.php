@@ -76,7 +76,7 @@
 								<li><a href="#"><i class="lnr lnr-user"></i> <span>My Profil</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Massage</span></a></li>
 								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Setting</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Log Out</span></a></li>
+								<li><a href="<?php echo site_url('backend/login/logout');?>"><i class="lnr lnr-exit"></i> <span>Log Out</span></a></li>
 							</ul>
 						</li>
 						<!-- <li>
@@ -92,7 +92,7 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+						<li><a href="<?php echo site_url('dashboard');?>" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
 						<li>
 							<a href="#subPages1" data-toggle="collapse" class="collapsed"><i class="lnr lnr-tag"></i> <span>Additional</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="subPages1" class="collapse ">

@@ -15,7 +15,7 @@ class Category extends CI_Controller {
 	{
 		$d['data'] = $this->db->query("select* from t_category");  
 		$x['isi'] = $this->load->view('backend/v_category',$d,true);
-		$this->load->view('backend/dashboard',$x);
+		$this->load->view('backend/v_Template',$x);
 	}
 
 	public function save()

@@ -8,8 +8,10 @@ class Dashboard extends CI_Controller{
             redirect($url);
         };
 	}
-	function index(){	
-		$this->load->view('backend/dashboard');
+	function index(){
+		$d['data'] = $this->db->query("select* from t_category");  
+		$x['isi'] = $this->load->view('backend/v_dashboard',$d,true);
+		$this->load->view('backend/v_template',$x);
 	}
 
 }

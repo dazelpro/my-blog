@@ -19,14 +19,14 @@ class Article extends CI_Controller {
 		$x['category'] = $this->db->query("select* from t_category");
 		$x['tag'] = $this->db->query("select* from t_tag"); 
 		$x['isi'] = $this->load->view('backend/v_article',$x,true);
-		$this->load->view('backend/dashboard',$x);
+		$this->load->view('backend/v_Template',$x);
 	}
 
 	public function listing()
 	{
 		$d['data'] = $this->db->query("select* from t_article join t_category where t_category.category_id = t_article.article_category_id");  
 		$x['isi'] = $this->load->view('backend/v_list_article',$d,true);
-		$this->load->view('backend/dashboard',$x);
+		$this->load->view('backend/v_Template',$x);
 	}
 
 	public function get()
@@ -36,7 +36,7 @@ class Article extends CI_Controller {
 		$x['tag'] = $this->db->query("select* from t_tag"); 
 		$x['article'] = $this->db->query("select* from t_article where article_id = '$id'"); 
 		$x['isi'] = $this->load->view('backend/v_edit_article',$x,true);
-		$this->load->view('backend/dashboard',$x);
+		$this->load->view('backend/v_Template',$x);
 	}
 
 	public function publish()
